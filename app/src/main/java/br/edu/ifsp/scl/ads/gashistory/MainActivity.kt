@@ -18,7 +18,7 @@ import com.google.android.material.snackbar.Snackbar
 class MainActivity : AppCompatActivity(), OnGasClickListener {
     companion object Extras {
         const val EXTRA_GAS = "EXTRA_GAS"
-        const val EXTRA_POSITION_ELEMENT = "EXTRA_POSITION"
+        const val EXTRA_POSITION_ELEMENT = "EXTRA_GAS_POSITION"
     }
 
     private val activityMainBinding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }

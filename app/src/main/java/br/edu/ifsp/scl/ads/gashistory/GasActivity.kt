@@ -21,7 +21,7 @@ class GasActivity: AppCompatActivity() {
         setContentView(activityGasBinding.root)
         positionElement = intent.getIntExtra(EXTRA_POSITION_ELEMENT, -1)
 
-        intent.getParcelableExtra<Gas>(EXTRA_POSITION_ELEMENT)?.run {
+        intent.getParcelableExtra<Gas>(EXTRA_GAS)?.run {
             activityGasBinding.valueEt.setText(this.value.toString())
             activityGasBinding.dateDp.updateDate(this.date.year, this.date.month, this.date.day)
 
